@@ -1,36 +1,187 @@
 body {
-    font-family: Arial;
-    text-align: center;
-    background-color: #f2f2f2;
-  }
-  input {
-    padding: 10px;
-    width: 250px;
-  }
-  button {
-    padding: 10px;
-    background-color: blue;
-    color: white;
-    border: none;
-    cursor: pointer;
-  }
-  ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  li {
-    background-color: white;
-    padding: 10px;
-    margin: 10px auto;
-    width: 300px;
-    border-radius: 5px;
-    display: flex;
-    justify-content: space-between;
-  }
-  .deleteBtn {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 5px;
-    cursor: pointer;
-  }
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  transition: 0.3s;
+}
+
+.container {
+  width: 400px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px gray;
+  transition: 0.3s;
+}
+
+h1 {
+  text-align: center;
+}
+
+.input-box {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+input, select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid gray;
+}
+
+button {
+  padding: 10px;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkgreen;
+}
+
+#searchInput {
+  margin-top: 15px;
+}
+
+.filter-box {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 5px;
+}
+
+.filter-box button {
+  flex: 1;
+  background: #007bff;
+}
+
+.filter-box button:hover {
+  background: #0056b3;
+}
+
+.clear-btn {
+  margin-top: 10px;
+  width: 100%;
+  background: black;
+}
+
+.clear-btn:hover {
+  background: #333;
+}
+
+.dark-btn {
+  width: 100%;
+  margin-bottom: 10px;
+  background: purple;
+}
+
+.dark-btn:hover {
+  background: darkmagenta;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+li {
+  background: #f9f9f9;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.task-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.delete-btn {
+  background: red;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  border: none;
+}
+
+.delete-btn:hover {
+  background: darkred;
+}
+
+.edit-btn {
+  background: orange;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  border: none;
+  margin-right: 5px;
+}
+
+.edit-btn:hover {
+  background: darkorange;
+}
+
+.reminder-text {
+  font-size: 12px;
+  color: blue;
+}
+
+.category-text {
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.priority-high {
+  color: red;
+  font-weight: bold;
+}
+
+.priority-medium {
+  color: orange;
+  font-weight: bold;
+}
+
+.priority-low {
+  color: green;
+  font-weight: bold;
+}
+
+/* DARK MODE */
+.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+.dark-mode .container {
+  background-color: #1e1e1e;
+  box-shadow: 0px 0px 10px black;
+}
+
+.dark-mode li {
+  background: #2a2a2a;
+}
+
+.dark-mode input, 
+.dark-mode select {
+  background: #333;
+  color: white;
+  border: 1px solid white;
+}
